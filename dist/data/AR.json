@@ -1,0 +1,232 @@
+[
+   {
+      "monthyear":"Mar 2019",
+      "sourcesystemkey":11,
+      "openbalance":4213182.8900,
+      "90AR":1442450.2200,
+      "90AR%":34.2300,
+      "enddate":"\/Date(1554004800000)\/",
+      "ARCount":25300,
+      "AR90Count":11013
+   },
+   {
+      "monthyear":"Apr 2019",
+      "sourcesystemkey":11,
+      "openbalance":4437080.8800,
+      "90AR":1332642.0500,
+      "90AR%":30.0300,
+      "enddate":"\/Date(1556596800000)\/",
+      "ARCount":22738,
+      "AR90Count":9963
+   },
+   {
+      "monthyear":"May 2019",
+      "sourcesystemkey":11,
+      "openbalance":3261648.7000,
+      "90AR":1271294.7800,
+      "90AR%":38.9700,
+      "enddate":"\/Date(1559275200000)\/",
+      "ARCount":20815,
+      "AR90Count":8495
+   },
+   {
+      "monthyear":"Jun 2019",
+      "sourcesystemkey":11,
+      "openbalance":3568659.1500,
+      "90AR":1251267.9900,
+      "90AR%":35.0600,
+      "enddate":"\/Date(1561867200000)\/",
+      "ARCount":19250,
+      "AR90Count":8239
+   },
+   {
+      "monthyear":"Jul 2019",
+      "sourcesystemkey":11,
+      "openbalance":3507247.6800,
+      "90AR":1316214.5300,
+      "90AR%":37.5200,
+      "enddate":"\/Date(1564545600000)\/",
+      "ARCount":19620,
+      "AR90Count":7859
+   },
+   {
+      "monthyear":"Aug 2019",
+      "sourcesystemkey":11,
+      "openbalance":3336399.3800,
+      "90AR":1344206.5000,
+      "90AR%":40.2800,
+      "enddate":"\/Date(1567224000000)\/",
+      "ARCount":18847,
+      "AR90Count":7642
+   },
+   {
+      "monthyear":"Sep 2019",
+      "sourcesystemkey":11,
+      "openbalance":3677834.1300,
+      "90AR":1389305.7900,
+      "90AR%":37.7700,
+      "enddate":"\/Date(1569816000000)\/",
+      "ARCount":19755,
+      "AR90Count":7577
+   },
+   {
+      "monthyear":"Oct 2019",
+      "sourcesystemkey":11,
+      "openbalance":3480337.9900,
+      "90AR":1339806.2100,
+      "90AR%":38.4900,
+      "enddate":"\/Date(1572494400000)\/",
+      "ARCount":19030,
+      "AR90Count":7075
+   },
+   {
+      "monthyear":"Nov 2019",
+      "sourcesystemkey":11,
+      "openbalance":3801790.2100,
+      "90AR":1237267.5600,
+      "90AR%":32.5400,
+      "enddate":"\/Date(1575090000000)\/",
+      "ARCount":18867,
+      "AR90Count":6885
+   },
+   {
+      "monthyear":"Dec 2019",
+      "sourcesystemkey":11,
+      "openbalance":3801790.2100,
+      "90AR":1466067.8600,
+      "90AR%":38.5600,
+      "enddate":"\/Date(1577768400000)\/",
+      "ARCount":18867,
+      "AR90Count":8503
+   },
+   {
+      "monthyear":"Jan 2020",
+      "sourcesystemkey":11,
+      "openbalance":3374056.6100,
+      "90AR":1112079.3900,
+      "90AR%":32.9500,
+      "enddate":"\/Date(1580446800000)\/",
+      "ARCount":17163,
+      "AR90Count":5990
+   },
+   {
+      "monthyear":"Feb 2020",
+      "sourcesystemkey":11,
+      "openbalance":3269422.0600,
+      "90AR":1042093.6400,
+      "90AR%":31.8700,
+      "enddate":"\/Date(1582952400000)\/",
+      "ARCount":16951,
+      "AR90Count":5501
+   },
+   {
+      "monthyear":"Mar 2020",
+      "sourcesystemkey":11,
+      "openbalance":3147639.6700,
+      "90AR":1145796.8600,
+      "90AR%":36.4000,
+      "enddate":"\/Date(1585627200000)\/",
+      "ARCount":16948,
+      "AR90Count":5787
+   },
+   {
+      "monthyear":"Apr 2020",
+      "sourcesystemkey":11,
+      "openbalance":3361644.3900,
+      "90AR":1088998.9300,
+      "90AR%":32.3900,
+      "enddate":"\/Date(1588219200000)\/",
+      "ARCount":16779,
+      "AR90Count":5786
+   },
+   {
+      "monthyear":"May 2020",
+      "sourcesystemkey":11,
+      "openbalance":2960947.7400,
+      "90AR":1004576.6800,
+      "90AR%":33.9200,
+      "enddate":"\/Date(1590897600000)\/",
+      "ARCount":15857,
+      "AR90Count":5436
+   },
+   {
+      "monthyear":"Jun 2020",
+      "sourcesystemkey":11,
+      "openbalance":2954992.6700,
+      "90AR":1038461.8600,
+      "90AR%":35.1400,
+      "enddate":"\/Date(1593489600000)\/",
+      "ARCount":14982,
+      "AR90Count":5148
+   },
+   {
+      "monthyear":"Jul 2020",
+      "sourcesystemkey":11,
+      "openbalance":2811286.1500,
+      "90AR":980656.0100,
+      "90AR%":34.8800,
+      "enddate":"\/Date(1596168000000)\/",
+      "ARCount":15778,
+      "AR90Count":5331
+   },
+   {
+      "monthyear":"Aug 2020",
+      "sourcesystemkey":11,
+      "openbalance":3161062.9500,
+      "90AR":939191.7900,
+      "90AR%":29.7100,
+      "enddate":"\/Date(1598846400000)\/",
+      "ARCount":16192,
+      "AR90Count":5379
+   },
+   {
+      "monthyear":"Sep 2020",
+      "sourcesystemkey":11,
+      "openbalance":3624283.3100,
+      "90AR":922838.1100,
+      "90AR%":25.4600,
+      "enddate":"\/Date(1601438400000)\/",
+      "ARCount":16574,
+      "AR90Count":5513
+   },
+   {
+      "monthyear":"Oct 2020",
+      "sourcesystemkey":11,
+      "openbalance":3175487.6800,
+      "90AR":860097.6200,
+      "90AR%":27.0800,
+      "enddate":"\/Date(1604116800000)\/",
+      "ARCount":17530,
+      "AR90Count":5285
+   },
+   {
+      "monthyear":"Nov 2020",
+      "sourcesystemkey":11,
+      "openbalance":2989057.7200,
+      "90AR":685837.8900,
+      "90AR%":22.9400,
+      "enddate":"\/Date(1606712400000)\/",
+      "ARCount":17244,
+      "AR90Count":4291
+   },
+   {
+      "monthyear":"Dec 2020",
+      "sourcesystemkey":11,
+      "openbalance":2878723.8500,
+      "90AR":593743.8800,
+      "90AR%":20.6200,
+      "enddate":"\/Date(1609390800000)\/",
+      "ARCount":17144,
+      "AR90Count":4068
+   },
+   {
+      "monthyear":"Jan 2021",
+      "sourcesystemkey":11,
+      "openbalance":3162826.8200,
+      "90AR":618050.1300,
+      "90AR%":19.5400,
+      "enddate":"\/Date(1610946000000)\/",
+      "ARCount":17251,
+      "AR90Count":4286
+   }
+]

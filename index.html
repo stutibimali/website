@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prochant</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@500;700&display=swap" rel="stylesheet">
+    <!-- DevExtreme themes -->
+    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/20.2.4/css/dx.common.css" />
+    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/20.2.4/css/dx.light.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-line-icons@2.5.5/dist/styles/simple-line-icons.min.css" /> -->
+
+    <!-- <link rel="stylesheet" href="https://unpkg.com/@csstools/normalize.css/evergreen.css" /> -->
+    <link rel="stylesheet" href="./src/prochant.css" />
+</head>
+<body class="dx-viewport">
+    <header class="container">
+        <nav></nav>
+        <div class="navbar shadow">
+            <div class="menu-and-logo">
+                <i class="icon-menu"></i>
+                <span class="logo">Prochant</span>
+            </div>
+            <div class="user">
+                <span class="user-display-name">Sheriff</span>
+                <i class="icon-user"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="container page-init-hidden">
+        <div class="page-note">
+            All comparisons are with last month total
+        </div>
+        <div class="row mb-4">
+            <div class="col-3">
+                <div class="pro-card-group">
+                    <div class="pro-card controls-filter mb-2">
+                        <div class="control-group">
+                            <label>Data includes</label>
+                            <div class="control pdx-dd" id="pdxDataIncludes"></div>
+                        </div>
+                        <div class="control-group mb-0">
+                            <label>Branch</label>
+                            <div class="control pdx-dd" id="pdxBranch"></div>
+                        </div>
+                    </div>
+                    <div class="pro-card big-card-shadow">
+                        <label class="mb-3 text-darkest">Total revenue cycle</label>
+                        <div class="sz-h1 fw-bold mb-1">$4.94M</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="pro-card-group">
+                    <div class="pro-card chart-graph-5texts big-card-shadow cursor-pointer" id="cardOpenOrders">
+                        <label>Open orders</label>
+                        <div class="flex-x">
+                            <div class="sz-h2 fw-bold">$471.24K</div>
+                            <div class="perc-trend red"><i class="icon-arrow trending-up"></i><span>+9.54%</span></div>
+                        </div>
+                        <div class="abs-trend red">+45,228.53</div>
+                        <div class="pdx-line-chart" id="pdxOpenOrdersChart"></div>
+                        <div class="foot-note">12 month chart</div>
+                    </div>
+                    <div class="flex-x two-split-gap">
+                        <div class="pro-card flex-1 metric-3texts-arrow cursor-pointer" id="cardOpenOrdersCount">
+                            <label>Count <i class="icon-arrow-right-circle"></i></label>
+                            <div class="sz-h3">2,811</div>
+                            <div class="red sz-md">+227</div>
+                        </div>
+                        <div class="pro-card flex-1 metric-3texts-arrow cursor-pointer" id="cardOpenOrdersDays">
+                            <label>Days <i class="icon-arrow-right-circle"></i></label>
+                            <div class="sz-h3">6.13</div>
+                            <div class="red sz-md">+0.51</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="pro-card-group">
+                    <div class="pro-card chart-graph-5texts big-card-shadow cursor-pointer" id="cardHeldRevenue">
+                        <label>Held revenue</label>
+                        <div class="flex-x">
+                            <div class="sz-h2 fw-bold">$83,515.20</div>
+                            <div class="perc-trend red"><i class="icon-arrow trending-up"></i><span>+93.84%</span></div>
+                        </div>
+                        <div class="abs-trend red">+40,431.53</div>
+                        <div class="pdx-line-chart cursor-pointer" id="pdxHeldRevenueChart"></div>
+                        <div class="foot-note">12 month chart</div>
+                    </div>
+                    <div class="flex-x two-split-gap">
+                        <div class="pro-card flex-1 metric-3texts-arrow cursor-pointer" id="cardHeldRevenueCount">
+                            <label>Count <i class="icon-arrow-right-circle"></i></label>
+                            <div class="sz-h3">1,661</div>
+                            <div class="red sz-md">+894</div>
+                        </div>
+                        <div class="pro-card flex-1 metric-3texts-arrow cursor-pointer" id="cardHeldRevenueDays">
+                            <label>Days <i class="icon-arrow-right-circle"></i></label>
+                            <div class="sz-h3">1.09</div>
+                            <div class="red sz-md">+0.52</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="pro-card-group">
+                    <div class="pro-card chart-graph-5texts big-card-shadow cursor-pointer" id="cardAR">
+                        <label>Account receivable</label>
+                        <div class="flex-x">
+                            <div class="sz-h2 fw-bold">$4.38M</div>
+                            <div class="perc-trend green"><i class="icon-arrow trending-down"></i><span>-1.19%</span></div>
+                        </div>
+                        <div class="abs-trend green">-41.73K</div>
+                        <div class="pdx-line-chart cursor-pointer" id="pdxAccountsReceivableChart"></div>
+                        <div class="foot-note">12 month chart</div>
+                    </div>
+                    <div class="flex-x two-split-gap">
+                        <div class="pro-card flex-1 metric-3texts-arrow cursor-pointer" id="cardARCount">
+                            <label>Count <i class="icon-arrow-right-circle"></i></label>
+                            <div class="sz-h3">101K</div>
+                            <div class="green sz-md">-648</div>
+                        </div>
+                        <div class="pro-card flex-1 metric-3texts-arrow cursor-pointer" id="cardARDSO">
+                            <label>DSO <i class="icon-arrow-right-circle"></i></label>
+                            <div class="sz-h3">57.02</div>
+                            <div class="green sz-md">-0.03</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="row h_gap"></div> -->
+        <div class="row mb-2">
+            <div class="col-3">
+                <div class="pro-card-group inline-block">
+                    <div class="pro-card flex-x py-2">
+                        <div class="control pdx-btn-grp" id="pdxUnit"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="pro-card-group">
+                    <div class="pro-card chart-donut-goal big-card-shadow">
+                        <label>Billing</label>
+                        <div class="flex-x">
+                            <div class="pdx-donut" id="pdxBillingDonut"></div>
+                            <div class="flex-y">
+                                <div class="amount">$1.95M</div>
+                                <div class="goal-amt">
+                                    <span>$2.07M</span>
+                                    <i class="icon-info"></i>
+                                </div>
+                                <div class="goal-text">Goal</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="pro-card-group">
+                    <div class="pro-card chart-donut-goal big-card-shadow">
+                        <label>Payment activity</label>
+                        <div class="flex-x">
+                            <div class="pdx-donut" id="pdxPaymentActivityDonut"></div>
+                            <div class="flex-y">
+                                <div class="amount">$1.28M</div>
+                                <div class="goal-amt">
+                                    <span>$2.61M</span>
+                                    <i class="icon-info"></i>
+                                </div>
+                                <div class="goal-text">Goal</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="pro-card-group">
+                    <div class="pro-card chart-donut-goal big-card-shadow">
+                        <label>Denials</label>
+                        <div class="flex-x">
+                            <div class="pdx-donut" id="pdxDenialsDonut"></div>
+                            <div class="flex-y">
+                                <div class="amount">$336.62K</div>
+                                <div class="goal-amt">
+                                    <span>$404.28K</span>
+                                    <i class="icon-info"></i>
+                                </div>
+                                <div class="goal-text">Goal</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="pro-card-group">
+                    <div class="pro-card chart-donut-goal big-card-shadow">
+                        <label>90 + AR</label>
+                        <div class="flex-x">
+                            <div class="pdx-donut" id="pdx90ARDonut"></div>
+                            <div class="flex-y">
+                                <div class="amount">$1.26M</div>
+                                <div class="goal-amt">
+                                    <span>$1.15M</span>
+                                    <i class="icon-info"></i>
+                                </div>
+                                <div class="goal-text">Goal</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+    <script type="text/javascript" src="https://unpkg.com/jquery@3.5.1/dist/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="https://unpkg.com/easyrouter@2.0.2/easyrouter.min.js"></script> -->
+
+    <!-- DevExtreme library -->
+    <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/20.2.4/js/dx.all.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/20.2.4/js/dx.web.js"></script> -->
+    <!-- <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/20.2.4/js/dx.viz.js"></script> -->
+    <script type="module" src="./src/index.js"></script>
+</body>
+</html>
