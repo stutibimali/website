@@ -35,3 +35,28 @@ export function resizeToAspect(el, wRatio, hRatio) {
     const outerWidth = $(el).outerWidth();
     el.height( aspectRatio * outerWidth );
 }
+
+export function doubleAxis(name1, text1, color1, name2, text2, color2) {
+    return {
+        valueAxis: [{
+            name: name1,
+            title: {
+                text: text1,
+                font: { color: color1 }
+            },
+            label: {
+                font: { color: color1 }
+            }
+        }, {
+            name: name2,
+            position: "right",
+            title: {
+                text: text2,
+                font: { color: color2 }
+            },
+            label: {
+                font: { color: color2 }
+            }
+        }
+    ]};
+}

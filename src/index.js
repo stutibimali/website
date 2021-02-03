@@ -4,5 +4,5 @@ import { pageViewportFromQS } from './pdx/util.js';
 
 $(pageHome);
 
-pageInitAnimation();
-pageViewportFromQS();
+// pageInitAnimation();
+// pageViewportFromQS();
