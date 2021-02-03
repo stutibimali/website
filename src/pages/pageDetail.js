@@ -24,7 +24,6 @@ export default function pageDetail() {
 }
 
 function detailedChart(qsData) {
-    console.log(qsData);
     const multiSeriesData = [];
     const s1 = data['SplineSeries1'];
     const s2 = data['SplineSeries2'];
