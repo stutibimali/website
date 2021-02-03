@@ -1,4 +1,3 @@
-
 export const data = {
     DataIncludes: ['Client', 'Prochant', 'Prochant & Client'],
     // Branch: [], // See below
@@ -51,55 +50,3 @@ data['90ARDonut'] = [{ name: "Difference", val: 9.68 },
 data['SplineMonths'] = ['Dec 2019', 'Jan 2020', 'Feb 2020', 'Mar 2020', 'Apr 2020', 'May 2020', 'Jun 2020', 'Jul 2020', 'Aug 2020', 'Sep 2020', 'Oct 2020', 'Nov 2020'];
 data['SplineSeries1'] = [605,680,660, 630,335,375, 330,440,402, 450,380,405];
 data['SplineSeries2'] = [510,510,525, 520,525,510, 480,475,475, 465,465,465];
-
-// var dataSource = data['Unit'];
-// $("#pdxUnit").dxButtonGroup({
-//     items: dataSource,
-//     keyExpr: "text",
-//     stylingMode: "outlined",
-//     //stylingMode: "text",
-//     selectedItemKeys: ["Dollars"],
-//     onItemClick: function(e){
-//         DevExpress.ui.notify({ message: 'The "' + e.itemData.text + '" button was clicked', width: 420 }, "success", 1000);
-//     }
-// });
-
-// const donutFirst = $('.pdx-donut:first');
-// const donutWidth = donutFirst.width();
-// const donutHeight = donutFirst.height();
-// // console.log('donutWidth', donutWidth, 'donutHeight', donutHeight);
-// const donutCommonOptions = {
-//     type: "doughnut",
-//     minSegmentSize: 2,
-//     // legend: { visible: true, verticalAlignment: "center", },
-//     legend: { visible: false },
-//     startAngle: 90,
-//     innerRadius: 0.7,
-//     annotations: [{
-//         tooltipEnabled: false,
-//         type: 'text',
-//         text: '',
-//         paddingLeftRight: 0,
-//         paddingTopBottom: 0,
-//         border: false,
-//         color: 'transparent',
-//         font: { family: 'Assistant', size: '0.8rem', weight: 700, color: colorRed },
-//         x: donutWidth/2, y: donutWidth/2,
-//     }],
-//     // size: { width: 30, height: 30 },
-//     series: [{
-//         argumentField: "name",
-//         // label: { visible: false, position: 'inside' },
-//     }]
-// };
-// function buildDonutOptions(p, d, t, g) {
-//     var opts = Object.assign({}, donutCommonOptions, {
-//         palette: p,
-//         dataSource: d,
-//         // title: "Title",
-//     });
-//     if(t && t[0]=='-') opts.segmentsDirection = 'anticlockwise';
-//     opts.annotations[0].text = t;
-//     opts.annotations[0].font.color = g? colorGreen: colorRed;
-//     return opts;
-// };

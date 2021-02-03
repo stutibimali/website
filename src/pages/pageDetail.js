@@ -3,7 +3,7 @@ import { pdxSelectBox, pdxSelectBoxSearch, pdxMultiSelectBoxWithSearch } from '.
 import { pdxButtonGroup } from '../pdx/pdxButtonGroup.js';
 import { pdxLineChart } from '../pdx/pdxChart.js';
 import { pdxMultiSeriesChart } from '../pdx/pdxMultiSeriesChart.js';
-import { QS } from '../pdx/util.js';
+import { QS, resizeToAspect } from '../pdx/util.js';
 
 export default function pageDetail() {
     var dataSource = data['DataIncludes'];
@@ -24,13 +24,16 @@ export default function pageDetail() {
 }
 
 function detailedChart(qsData) {
-    dataSource = [];
+    console.log(qsData);
+    const multiSeriesData = [];
     const s1 = data['SplineSeries1'];
     const s2 = data['SplineSeries2'];
     const legends = ['Current open orders', 'Expected'];
     data['SplineMonths'].forEach(function(m, i){
-        dataSource.push({ series: 'series1', month: m, value: s1[i]*1000 });
-        dataSource.push({ series: 'series2', month: m, value: s2[i]*1000 });
+        multiSeriesData.push({ series: 'series1', month: m, value: s1[i]*1000 });
+        multiSeriesData.push({ series: 'series2', month: m, value: s2[i]*1000 });
     });
-    pdxMultiSeriesChart('#pdxOpenOrdersDetailChart', 'spline', dataSource, legends);
+
+    resizeToAspect('#pdxOpenOrdersDetailChart', 1, 0.65);
+    pdxMultiSeriesChart('#pdxOpenOrdersDetailChart', 'spline', multiSeriesData, legends);
 }

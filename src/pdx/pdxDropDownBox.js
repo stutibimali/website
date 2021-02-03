@@ -14,13 +14,8 @@ export function pdxDropDownBoxWithDataGrid(el, dataSource, selected, opts) {
         showClearButton: opts.showClearButton || false,
         contentTemplate: function(e){
             const ddbComponent = e.component, value = ddbComponent.option("value");
-            const containerDiv = $('<div class="pdx-dropdown">');
-            const btns = $('<div class="apply-cancel-btns"></div>').appendTo(containerDiv);
-            const applyBtn = $('<button>Apply<button>').appendTo(btns);
-            const cancelBtn = $('<button>Cancel<button>').appendTo(btns);
-            const datagrid = $('<div class="datagrid-tpl"></div>').appendTo(containerDiv);
-            // <button>Apply<button><button>Cancel<button>
-            // containerDiv.find('.datagrid-tpl')
+            // const containerDiv = $('<div class="pdx-dropdown">');
+            const datagrid = $('<div class="datagrid-tpl"></div>').appendTo(el);
             const $dataGrid = datagrid.dxDataGrid({
                 dataSource: e.component.getDataSource(),
                 columns: ["name"],
@@ -33,8 +28,8 @@ export function pdxDropDownBoxWithDataGrid(el, dataSource, selected, opts) {
                 scrolling: true, // { mode: "infinite" },
                 selection: { mode: "multiple" },
                 // selectedRowKeys: [value],
-                height: "100%",
-                onSelectionChanged: function(selectedItems){
+                height: "120%",
+                onSelectionChanged: function(selectedItems) {
                     var keys = selectedItems.selectedRowKeys,
                         hasSelection = keys.length;
                     console.log('onSelectionChanged', selectedItems, keys);

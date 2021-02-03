@@ -27,3 +27,11 @@ export function QS(key, dV) {
     }
     return QS.qs[key] || dV;
 }
+
+export function resizeToAspect(el, wRatio, hRatio) {
+    el = $(el);
+    console.log(el);
+    const aspectRatio = (hRatio / wRatio);
+    const outerWidth = $(el).outerWidth();
+    el.height( aspectRatio * outerWidth );
+}

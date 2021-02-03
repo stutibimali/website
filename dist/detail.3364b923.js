@@ -241,56 +241,7 @@ data['90ARDonut'] = [{
 }];
 data['SplineMonths'] = ['Dec 2019', 'Jan 2020', 'Feb 2020', 'Mar 2020', 'Apr 2020', 'May 2020', 'Jun 2020', 'Jul 2020', 'Aug 2020', 'Sep 2020', 'Oct 2020', 'Nov 2020'];
 data['SplineSeries1'] = [605, 680, 660, 630, 335, 375, 330, 440, 402, 450, 380, 405];
-data['SplineSeries2'] = [510, 510, 525, 520, 525, 510, 480, 475, 475, 465, 465, 465]; // var dataSource = data['Unit'];
-// $("#pdxUnit").dxButtonGroup({
-//     items: dataSource,
-//     keyExpr: "text",
-//     stylingMode: "outlined",
-//     //stylingMode: "text",
-//     selectedItemKeys: ["Dollars"],
-//     onItemClick: function(e){
-//         DevExpress.ui.notify({ message: 'The "' + e.itemData.text + '" button was clicked', width: 420 }, "success", 1000);
-//     }
-// });
-// const donutFirst = $('.pdx-donut:first');
-// const donutWidth = donutFirst.width();
-// const donutHeight = donutFirst.height();
-// // console.log('donutWidth', donutWidth, 'donutHeight', donutHeight);
-// const donutCommonOptions = {
-//     type: "doughnut",
-//     minSegmentSize: 2,
-//     // legend: { visible: true, verticalAlignment: "center", },
-//     legend: { visible: false },
-//     startAngle: 90,
-//     innerRadius: 0.7,
-//     annotations: [{
-//         tooltipEnabled: false,
-//         type: 'text',
-//         text: '',
-//         paddingLeftRight: 0,
-//         paddingTopBottom: 0,
-//         border: false,
-//         color: 'transparent',
-//         font: { family: 'Assistant', size: '0.8rem', weight: 700, color: colorRed },
-//         x: donutWidth/2, y: donutWidth/2,
-//     }],
-//     // size: { width: 30, height: 30 },
-//     series: [{
-//         argumentField: "name",
-//         // label: { visible: false, position: 'inside' },
-//     }]
-// };
-// function buildDonutOptions(p, d, t, g) {
-//     var opts = Object.assign({}, donutCommonOptions, {
-//         palette: p,
-//         dataSource: d,
-//         // title: "Title",
-//     });
-//     if(t && t[0]=='-') opts.segmentsDirection = 'anticlockwise';
-//     opts.annotations[0].text = t;
-//     opts.annotations[0].font.color = g? colorGreen: colorRed;
-//     return opts;
-// };
+data['SplineSeries2'] = [510, 510, 525, 520, 525, 510, 480, 475, 475, 465, 465, 465];
 },{}],"src/pdx/pdxSelectBox.js":[function(require,module,exports) {
 "use strict";
 
@@ -479,56 +430,7 @@ data['90ARDonut'] = [{
 }];
 data['SplineMonths'] = ['Dec 2019', 'Jan 2020', 'Feb 2020', 'Mar 2020', 'Apr 2020', 'May 2020', 'Jun 2020', 'Jul 2020', 'Aug 2020', 'Sep 2020', 'Oct 2020', 'Nov 2020'];
 data['SplineSeries1'] = [605, 680, 660, 630, 335, 375, 330, 440, 402, 450, 380, 405];
-data['SplineSeries2'] = [510, 510, 525, 520, 525, 510, 480, 475, 475, 465, 465, 465]; // var dataSource = data['Unit'];
-// $("#pdxUnit").dxButtonGroup({
-//     items: dataSource,
-//     keyExpr: "text",
-//     stylingMode: "outlined",
-//     //stylingMode: "text",
-//     selectedItemKeys: ["Dollars"],
-//     onItemClick: function(e){
-//         DevExpress.ui.notify({ message: 'The "' + e.itemData.text + '" button was clicked', width: 420 }, "success", 1000);
-//     }
-// });
-// const donutFirst = $('.pdx-donut:first');
-// const donutWidth = donutFirst.width();
-// const donutHeight = donutFirst.height();
-// // console.log('donutWidth', donutWidth, 'donutHeight', donutHeight);
-// const donutCommonOptions = {
-//     type: "doughnut",
-//     minSegmentSize: 2,
-//     // legend: { visible: true, verticalAlignment: "center", },
-//     legend: { visible: false },
-//     startAngle: 90,
-//     innerRadius: 0.7,
-//     annotations: [{
-//         tooltipEnabled: false,
-//         type: 'text',
-//         text: '',
-//         paddingLeftRight: 0,
-//         paddingTopBottom: 0,
-//         border: false,
-//         color: 'transparent',
-//         font: { family: 'Assistant', size: '0.8rem', weight: 700, color: colorRed },
-//         x: donutWidth/2, y: donutWidth/2,
-//     }],
-//     // size: { width: 30, height: 30 },
-//     series: [{
-//         argumentField: "name",
-//         // label: { visible: false, position: 'inside' },
-//     }]
-// };
-// function buildDonutOptions(p, d, t, g) {
-//     var opts = Object.assign({}, donutCommonOptions, {
-//         palette: p,
-//         dataSource: d,
-//         // title: "Title",
-//     });
-//     if(t && t[0]=='-') opts.segmentsDirection = 'anticlockwise';
-//     opts.annotations[0].text = t;
-//     opts.annotations[0].font.color = g? colorGreen: colorRed;
-//     return opts;
-// };
+data['SplineSeries2'] = [510, 510, 525, 520, 525, 510, 480, 475, 475, 465, 465, 465];
 },{}],"src/palette.js":[function(require,module,exports) {
 "use strict";
 
@@ -585,7 +487,6 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.pdxLineChart = pdxLineChart;
-exports.pdxChartSplines = pdxChartSplines;
 
 var _Data = require("../Data.js");
 
@@ -661,15 +562,11 @@ function lineChartToolTipTemplate(info, container) {
   content.find(".month").text(info.argument);
   content.find(".value").text('$' + (info.value + 400.82) + 'K');
   content.appendTo(container);
-}
-
-function pdxChartSplines(el, dataSource, lineColor) {
-  el = $(el); // 
-  //
-
-  el.dxChart(opts);
-  return el.dxChart('instance');
-}
+} // export function pdxChartSplines(el, dataSource, lineColor) {
+//     el = $(el);
+//     el.dxChart(opts);
+//     return el.dxChart('instance');
+// }
 },{"../Data.js":"src/Data.js","../palette.js":"src/palette.js"}],"src/pdx/pdxMultiSeriesChart.js":[function(require,module,exports) {
 "use strict";
 
@@ -681,19 +578,12 @@ exports.pdxMultiSeriesChart = pdxMultiSeriesChart;
 var _palette = require("../palette.js");
 
 function pdxMultiSeriesChart(el, type, dataSource, legends) {
-  // pdxChartSplines('#pdx', data[])
-  // const dataSource = [];
-  // console.log(dataSource);
   if (el) el = $(el);
-  var hRatio = 0.725;
-  var width = el.width();
-  var height = width * hRatio; // console.log(width, height);
-
   el.dxChart({
-    width: width,
-    height: height,
+    // width: width,// height: height,
     dataSource: dataSource,
     palette: 'SplinePalette',
+    redrawOnResize: true,
     commonAxisSettings: {
       grid: {
         visible: true,
@@ -729,7 +619,6 @@ function pdxMultiSeriesChart(el, type, dataSource, legends) {
         size: '0.8rem'
       },
       customizeText: function customizeText(info) {
-        // console.log(a,b);
         return legends[info.seriesIndex];
       }
     }
@@ -745,6 +634,7 @@ exports.pageInitAnimation = pageInitAnimation;
 exports.pageViewportFromQS = pageViewportFromQS;
 exports.navigateTo = navigateTo;
 exports.QS = QS;
+exports.resizeToAspect = resizeToAspect;
 
 function pageInitAnimation() {
   $('.page-init-hidden').hide().addClass('page-init-animating').removeClass('page-init-hidden');
@@ -775,6 +665,14 @@ function QS(key, dV) {
 
   return QS.qs[key] || dV;
 }
+
+function resizeToAspect(el, wRatio, hRatio) {
+  el = $(el);
+  console.log(el);
+  var aspectRatio = hRatio / wRatio;
+  var outerWidth = $(el).outerWidth();
+  el.height(aspectRatio * outerWidth);
+}
 },{}],"src/pages/pageDetail.js":[function(require,module,exports) {
 "use strict";
 
@@ -804,33 +702,33 @@ function pageDetail() {
   (0, _pdxButtonGroup.pdxButtonGroup)('#pdxUnit', _data.data['Unit'], 'Dollars');
   (0, _pdxButtonGroup.pdxButtonGroup)('#pdxPeriodInMonths', _data.data['PeriodInMonths'], '12');
   (0, _pdxButtonGroup.pdxButtonGroup)('#pdxOrderDateOrDOS', _data.data['OrderDateOrDOS'], 'Order date');
-  _data.data['AccountsReceivableChart']['options'] = {// 
-  };
   (0, _pdxChart.pdxLineChart)('#pdxApproachingTimelyFiling', _data.data['AccountsReceivableChart'], true);
   (0, _pdxChart.pdxLineChart)('#pdxPastTimelyFiling', _data.data['AccountsReceivableChart'], false);
   detailedChart(_util.QS['data']);
 }
 
-function detailedChart() {
-  dataSource = [];
+function detailedChart(qsData) {
+  console.log(qsData);
+  var multiSeriesData = [];
   var s1 = _data.data['SplineSeries1'];
   var s2 = _data.data['SplineSeries2'];
   var legends = ['Current open orders', 'Expected'];
 
   _data.data['SplineMonths'].forEach(function (m, i) {
-    dataSource.push({
+    multiSeriesData.push({
       series: 'series1',
       month: m,
       value: s1[i] * 1000
     });
-    dataSource.push({
+    multiSeriesData.push({
       series: 'series2',
       month: m,
       value: s2[i] * 1000
     });
   });
 
-  (0, _pdxMultiSeriesChart.pdxMultiSeriesChart)('#pdxOpenOrdersDetailChart', 'spline', dataSource, legends);
+  (0, _util.resizeToAspect)('#pdxOpenOrdersDetailChart', 1, 0.65);
+  (0, _pdxMultiSeriesChart.pdxMultiSeriesChart)('#pdxOpenOrdersDetailChart', 'spline', multiSeriesData, legends);
 }
 },{"../data.js":"src/data.js","../pdx/pdxSelectBox.js":"src/pdx/pdxSelectBox.js","../pdx/pdxButtonGroup.js":"src/pdx/pdxButtonGroup.js","../pdx/pdxChart.js":"src/pdx/pdxChart.js","../pdx/pdxMultiSeriesChart.js":"src/pdx/pdxMultiSeriesChart.js","../pdx/util.js":"src/pdx/util.js"}],"src/detail.js":[function(require,module,exports) {
 "use strict";
@@ -842,7 +740,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //import { pageInitAnimation, pageViewportFromQS } from './pdx/util';
 $(_pageDetail.default); //pageInitAnimation();
 //pageViewportFromQS();
-},{"./pages/pageDetail.js":"src/pages/pageDetail.js"}],"../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./pages/pageDetail.js":"src/pages/pageDetail.js"}],"../../scoop/persist/nodejs-lts/bin/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -870,7 +768,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50676" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64556" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -1046,5 +944,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/detail.js"], null)
+},{}]},{},["../../scoop/persist/nodejs-lts/bin/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/detail.js"], null)
 //# sourceMappingURL=/detail.3364b923.js.map

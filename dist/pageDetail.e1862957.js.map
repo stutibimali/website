@@ -1,1 +1,0 @@
-{"version":3,"sources":["src/pages/pageDetail.js"],"names":["pageDetail","console","log","arguments"],"mappings":";;;;;;;AACe,SAASA,UAAT,GAAsB;AACjCC,EAAAA,OAAO,CAACC,GAAR,CAAYF,UAAZ,EAAwBG,SAAxB;AACH","file":"pageDetail.e1862957.js","sourceRoot":"..","sourcesContent":["\nexport default function pageDetail() {\n    console.log(pageDetail, arguments);\n}\n"]}
