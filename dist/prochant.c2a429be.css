@@ -462,5 +462,34 @@ i { background-repeat: no-repeat; display: inline-block; width: 1rem; height: 1r
     display: flex;
     align-items: center;
 }
+.loader {    
+    
+    width: 288.5px;
+    height: 264.2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader.hidden{
+    animation: fadeout 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes spinner-rotate{
+    from { transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}
+.loader img{
+    animation: spinner-rotate 1s linear infinite;
+    width: 32px;
+    heightt: 32px;
+}
+.loaded-content{
+    display: none;
+}
+.loader-chart{    
+    display: flex;
+    justify-content: center;
+}
+
 
 /*# sourceMappingURL=/prochant.c2a429be.css.map */
